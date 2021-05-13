@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
+            <a-video id="surskit" autoplay loop="true" src="https://www.youtube.com/embed/2ZEBkdGJnl4" position="10 1 10" scale="5 5 5"></a-video>
+            <a-box castShadow="true" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Mouse-deer_Singapore_Zoo_2012.JPG" position="0 1 -5" rotation="0 0 0" scale="2 2 2" 
+            animation="property: object3D.rotation.y; to: 360; dir: normal; dur: 10000; loop: true">
+                <a-sphere src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/87181049_668549070560209_4344480074125279232_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Q6u0eOIFTwIAX9u-Ikp&_nc_oc=AQmjScWeK2XnSvlRyHtW5CxtYb-d3AXiPK1JFIvgTSAPTbUinghA1LxJW90g5fwNxRsvRIaCB_3PYScOxG8rYF0Q&_nc_ht=scontent-sjc3-1.xx&oh=be4ec38cea5eb775a5f1435161f156a3&oe=60C28CED" position="1 0 3"></a-sphere>
+            </a-box>
+            <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+        </a-scene>
+    </body>
+</html>
